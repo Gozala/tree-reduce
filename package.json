@@ -1,0 +1,42 @@
+{
+  "name": "tree-reduce",
+  "id": "tree-reduce",
+  "version": "0.0.1",
+  "description": "Reducible tree walk for an arbitrary data structures",
+  "keywords": [
+    "tree-reduce"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/tree-reduce",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/tree-reduce.git",
+    "web": "https://github.com/Gozala/tree-reduce"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/tree-reduce/issues/"
+  },
+  "devDependencies": {
+    "test": "~0.x.0",
+    "phantomify": "~0.x.0",
+    "repl-utils": "~1.0.0"
+  },
+  "main": "./core.js",
+  "scripts": {
+    "repl": "node node_modules/repl-utils",
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "node ./node_modules/phantomify/bin/cmd.js ./test/index.js",
+    "test-node": "node ./test/index.js",
+    "postinstall": "npm dedup"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Gozala/tree-reduce/License.md"
+    }
+  ],
+  "dependencies": {
+    "reducible": "~1.0.5",
+    "reducers": "~2.0.0"
+  }
+}
